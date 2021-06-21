@@ -1,0 +1,33 @@
+set MENU := Rice Beans Spinach Chicken;
+set NUTRIENTS  := Fat Sodium Potassium Carbohydrates Protein Fiber ;
+
+param Calories :=
+        Rice    166
+        Beans   240 
+        Spinach  41 
+        Chicken 225 ;
+
+param MinRDA := 
+        Fat               44
+        Sodium           100
+        Potassium       4700
+        Carbohydrates    200 
+        Protein           50  
+        Fiber             25  ;  
+
+param MaxRDA := 
+        Fat              1e100   # enter huge number (can't enter "Infinity")
+        Sodium            2400
+        Potassium        1e100
+        Carbohydrates      300 
+        Protein          1e100 
+        Fiber            1e100    ;  
+        
+        
+param NutrientAmount:  Rice    Beans   Spinach  Chicken :=
+        Fat              0.6    0.6      0.5        9  
+        Sodium            5       6      126      101
+        Potassium       166     801      839      309
+        Carbohydrates    35      45        7        0
+        Protein           7      15        5       34
+        Fiber             3      15       4.3       0  ;  
